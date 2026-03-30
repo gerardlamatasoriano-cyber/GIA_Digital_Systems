@@ -3,8 +3,8 @@
 <head>
   <meta charset="UTF-8" />
   <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-  <title>GIA Digital Solutions</title>
-  <meta name="description" content="GIA Digital Solutions helps companies improve efficiency through AI, automation and digital systems." />
+  <title>GIA Digital Systems</title>
+  <meta name="description" content="GIA Digital Systems helps companies improve efficiency through AI, automation and digital systems." />
   <style>
     :root {
       --bg: #0b1220;
@@ -313,6 +313,63 @@
       padding: 18px;
     }
 
+    .modal-overlay {
+  position: fixed;
+  inset: 0;
+  background: rgba(5, 10, 20, 0.72);
+  display: none;
+  align-items: center;
+  justify-content: center;
+  padding: 20px;
+  z-index: 2000;
+}
+
+.modal-overlay.active {
+  display: flex;
+}
+
+.modal-box {
+  width: min(100%, 520px);
+  background: #0f182a;
+  border: 1px solid rgba(255,255,255,0.12);
+  border-radius: 24px;
+  box-shadow: var(--shadow);
+  padding: 28px;
+  position: relative;
+}
+
+.modal-box h3 {
+  margin-top: 0;
+  margin-bottom: 12px;
+  font-size: 1.5rem;
+}
+
+.modal-box p {
+  color: var(--muted);
+  line-height: 1.7;
+  margin-bottom: 20px;
+}
+
+.modal-actions {
+  display: flex;
+  gap: 12px;
+  flex-wrap: wrap;
+}
+
+.modal-close {
+  position: absolute;
+  top: 14px;
+  right: 14px;
+  width: 40px;
+  height: 40px;
+  border: 0;
+  border-radius: 50%;
+  background: rgba(255,255,255,0.08);
+  color: var(--text);
+  font-size: 1.4rem;
+  cursor: pointer;
+}
+    
     .bars {
       display: flex;
       align-items: end;
@@ -490,6 +547,34 @@
       font-size: 0.92rem;
     }
 
+    .contact-form {
+  display: grid;
+  gap: 14px;
+  margin-top: 20px;
+}
+
+.contact-form input,
+.contact-form textarea {
+  width: 100%;
+  padding: 14px 16px;
+  border-radius: 14px;
+  border: 1px solid rgba(255,255,255,0.12);
+  background: rgba(255,255,255,0.05);
+  color: var(--text);
+  font: inherit;
+  outline: none;
+}
+
+.contact-form input::placeholder,
+.contact-form textarea::placeholder {
+  color: var(--muted);
+}
+
+.contact-form input:focus,
+.contact-form textarea:focus {
+  border-color: rgba(95,179,255,0.45);
+  box-shadow: 0 0 0 3px rgba(95,179,255,0.12);
+}
     .contact-card ul {
       list-style: none;
       padding: 0;
@@ -602,10 +687,10 @@
 <body>
   <nav class="nav">
     <div class="container nav-inner">
-      <a href="#home" class="brand" aria-label="GIA Digital Solutions home">
+      <a href="#home" class="brand" aria-label="GIA Digital Systems home">
         <span class="brand-mark" aria-hidden="true"></span>
         <span class="brand-text">
-          GIA Digital Solutions
+          GIA Digital Systems
           <small>Automation, AI & Digital Efficiency</small>
         </span>
       </a>
@@ -615,7 +700,7 @@
         <a href="#process">Process</a>
         <a href="#results">Results</a>
         <a href="#contact">Contact</a>
-        <a class="btn btn-secondary" href="#contact">Book a Call</a>
+        <button class="btn btn-secondary" id="openCallModal" type="button">Book a Call</button>
       </div>
     </div>
   </nav>
@@ -626,7 +711,7 @@
         <div class="eyebrow">Automation, AI & Digital Efficiency for Modern Businesses</div>
         <h1>Build smarter operations with automation, AI and digital systems.</h1>
         <p>
-          GIA Digital Solutions helps companies improve efficiency through AI, automation and digital systems.
+          GIA Digital Systems helps companies improve efficiency through AI, automation and digital systems.
           We design and implement solutions that reduce manual work, optimize processes and support scalable growth.
         </p>
 
@@ -805,16 +890,25 @@
         </article>
 
         <article class="contact-card" id="contact">
-          <h3>Let’s build your next digital system</h3>
-          <p>
-            Whether you need workflow automation, AI integration or a broader digital efficiency strategy, GIA Digital Solutions is built to help modern businesses operate better.
-          </p>
-          <ul>
-            <li><strong>Company:</strong> GIA Digital Solutions</li>
-            <li><strong>Focus:</strong> Automation, AI, process optimization, digital systems</li>
-            <li><strong>Ideal for:</strong> Businesses looking to modernize operations and scale efficiently</li>
-          </ul>
-        </article>
+  <h3>Let’s build your next digital system</h3>
+  <p>
+    Tell me a bit about your business, your current process challenges, or the type of automation you want to explore.
+  </p>
+
+  <form class="contact-form" action="mailto:hello@giadigitalsystems.com" method="post" enctype="text/plain">
+    <input type="text" name="name" placeholder="Your name" required />
+    <input type="email" name="email" placeholder="Your email" required />
+    <input type="text" name="company" placeholder="Company name" />
+    <textarea name="message" rows="5" placeholder="Tell me about your project or current bottlenecks..." required></textarea>
+    <button type="submit" class="btn btn-primary">Send Message</button>
+  </form>
+
+  <ul>
+    <li><strong>Email:</strong> hello@giadigitalsystems.com</li>
+    <li><strong>LinkedIn:</strong> Gerard La Mata / GIA Digital Systems</li>
+    <li><strong>Focus:</strong> Automation, AI, process optimization, digital systems</li>
+  </ul>
+</article>
       </div>
     </div>
   </section>
@@ -825,7 +919,7 @@
         <div>
           <h2>Digital efficiency, built for real operations.</h2>
           <p>
-            GIA Digital Solutions helps companies improve efficiency through AI, automation and digital systems — with a clear emphasis on practical implementation and measurable business value.
+            GIA Digital Systems helps companies improve efficiency through AI, automation and digital systems — with a clear emphasis on practical implementation and measurable business value.
           </p>
         </div>
         <a href="#contact" class="btn btn-primary">Get in Touch</a>
@@ -835,9 +929,62 @@
 
   <footer>
     <div class="container footer-inner">
-      <span>© 2026 GIA Digital Solutions. All rights reserved.</span>
+      <span>© 2026 GIA Digital Systems. All rights reserved.</span>
       <span>Automation, AI & Digital Efficiency for Modern Businesses</span>
     </div>
   </footer>
+  <div class="modal-overlay" id="callModal">
+  <div class="modal-box">
+    <button class="modal-close" id="closeCallModal" type="button" aria-label="Close">×</button>
+    <h3>Book a Call</h3>
+    <p>
+      Choose the option that works best for you. You can either book a meeting directly or send a quick request.
+    </p>
+
+    <div class="modal-actions">
+      <a class="btn btn-primary" href="https://calendly.com/tu-enlace" target="_blank" rel="noopener noreferrer">
+        Open Calendly
+      </a>
+      <a class="btn btn-secondary" href="#contact" id="goToContact">
+        Send a Request
+      </a>
+    </div>
+  </div>
+</div>
+  <script>
+  const openCallModal = document.getElementById('openCallModal');
+  const closeCallModal = document.getElementById('closeCallModal');
+  const callModal = document.getElementById('callModal');
+  const goToContact = document.getElementById('goToContact');
+
+  openCallModal.addEventListener('click', () => {
+    callModal.classList.add('active');
+    document.body.style.overflow = 'hidden';
+  });
+
+  closeCallModal.addEventListener('click', () => {
+    callModal.classList.remove('active');
+    document.body.style.overflow = '';
+  });
+
+  callModal.addEventListener('click', (e) => {
+    if (e.target === callModal) {
+      callModal.classList.remove('active');
+      document.body.style.overflow = '';
+    }
+  });
+
+  goToContact.addEventListener('click', () => {
+    callModal.classList.remove('active');
+    document.body.style.overflow = '';
+  });
+
+  document.addEventListener('keydown', (e) => {
+    if (e.key === 'Escape') {
+      callModal.classList.remove('active');
+      document.body.style.overflow = '';
+    }
+  });
+</script>
 </body>
 </html>
