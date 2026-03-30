@@ -28,55 +28,55 @@
     html { scroll-behavior: smooth; }
 
     body {
-  margin: 0;
-  font-family: Inter, ui-sans-serif, system-ui, -apple-system, BlinkMacSystemFont, "Segoe UI", sans-serif;
-  color: var(--text);
-  min-height: 100vh;
-  background-color: #08111f;
-  background-image:
-    radial-gradient(circle at 15% 20%, rgba(95,179,255,0.18) 0 2px, transparent 3px),
-    radial-gradient(circle at 30% 35%, rgba(95,179,255,0.10) 0 1.5px, transparent 3px),
-    radial-gradient(circle at 52% 18%, rgba(95,179,255,0.16) 0 2px, transparent 3px),
-    radial-gradient(circle at 68% 42%, rgba(95,179,255,0.12) 0 2px, transparent 3px),
-    radial-gradient(circle at 82% 24%, rgba(95,179,255,0.18) 0 2px, transparent 3px),
-    radial-gradient(circle at 20% 72%, rgba(95,179,255,0.12) 0 2px, transparent 3px),
-    radial-gradient(circle at 48% 78%, rgba(95,179,255,0.10) 0 1.5px, transparent 3px),
-    radial-gradient(circle at 77% 68%, rgba(95,179,255,0.14) 0 2px, transparent 3px),
-    linear-gradient(rgba(95,179,255,0.06) 1px, transparent 1px),
-    linear-gradient(90deg, rgba(95,179,255,0.06) 1px, transparent 1px),
-    radial-gradient(circle at center, rgba(22,90,190,0.30) 0%, rgba(8,17,31,0) 55%),
-    linear-gradient(180deg, #030b18 0%, #08111f 28%, #0b1d45 62%, #08111f 100%);
-  background-size:
-    220px 220px,
-    260px 260px,
-    240px 240px,
-    280px 280px,
-    230px 230px,
-    250px 250px,
-    270px 270px,
-    300px 300px,
-    48px 48px,
-    48px 48px,
-    100% 100%,
-    100% 100%;
-  background-attachment: fixed;
-}
+      margin: 0;
+      font-family: Inter, ui-sans-serif, system-ui, -apple-system, BlinkMacSystemFont, "Segoe UI", sans-serif;
+      color: var(--text);
+      min-height: 100vh;
+      background-color: #08111f;
+      background-image:
+        radial-gradient(circle at 15% 20%, rgba(95,179,255,0.18) 0 2px, transparent 3px),
+        radial-gradient(circle at 30% 35%, rgba(95,179,255,0.10) 0 1.5px, transparent 3px),
+        radial-gradient(circle at 52% 18%, rgba(95,179,255,0.16) 0 2px, transparent 3px),
+        radial-gradient(circle at 68% 42%, rgba(95,179,255,0.12) 0 2px, transparent 3px),
+        radial-gradient(circle at 82% 24%, rgba(95,179,255,0.18) 0 2px, transparent 3px),
+        radial-gradient(circle at 20% 72%, rgba(95,179,255,0.12) 0 2px, transparent 3px),
+        radial-gradient(circle at 48% 78%, rgba(95,179,255,0.10) 0 1.5px, transparent 3px),
+        radial-gradient(circle at 77% 68%, rgba(95,179,255,0.14) 0 2px, transparent 3px),
+        linear-gradient(rgba(95,179,255,0.06) 1px, transparent 1px),
+        linear-gradient(90deg, rgba(95,179,255,0.06) 1px, transparent 1px),
+        radial-gradient(circle at center, rgba(22,90,190,0.30) 0%, rgba(8,17,31,0) 55%),
+        linear-gradient(180deg, #030b18 0%, #08111f 28%, #0b1d45 62%, #08111f 100%);
+      background-size:
+        220px 220px,
+        260px 260px,
+        240px 240px,
+        280px 280px,
+        230px 230px,
+        250px 250px,
+        270px 270px,
+        300px 300px,
+        48px 48px,
+        48px 48px,
+        100% 100%,
+        100% 100%;
+      background-attachment: fixed;
+    }
 
     body::before {
-  content: "";
-  position: fixed;
-  inset: 0;
-  pointer-events: none;
-  z-index: -1;
-  background:
-    radial-gradient(circle at 12% 22%, rgba(95,179,255,0.20), transparent 10%),
-    radial-gradient(circle at 24% 58%, rgba(95,179,255,0.12), transparent 8%),
-    radial-gradient(circle at 42% 36%, rgba(95,179,255,0.14), transparent 9%),
-    radial-gradient(circle at 63% 30%, rgba(95,179,255,0.16), transparent 10%),
-    radial-gradient(circle at 78% 62%, rgba(95,179,255,0.14), transparent 9%),
-    radial-gradient(circle at 90% 26%, rgba(95,179,255,0.12), transparent 8%);
-  opacity: 0.9;
-}
+      content: "";
+      position: fixed;
+      inset: 0;
+      pointer-events: none;
+      z-index: -1;
+      background:
+        radial-gradient(circle at 12% 22%, rgba(95,179,255,0.20), transparent 10%),
+        radial-gradient(circle at 24% 58%, rgba(95,179,255,0.12), transparent 8%),
+        radial-gradient(circle at 42% 36%, rgba(95,179,255,0.14), transparent 9%),
+        radial-gradient(circle at 63% 30%, rgba(95,179,255,0.16), transparent 10%),
+        radial-gradient(circle at 78% 62%, rgba(95,179,255,0.14), transparent 9%),
+        radial-gradient(circle at 90% 26%, rgba(95,179,255,0.12), transparent 8%);
+      opacity: 0.9;
+    }
 
     a {
       color: inherit;
@@ -119,18 +119,18 @@
     }
 
     .brand-logo {
-  width: 48px;
-  height: 48px;
-  display: block;
-  flex-shrink: 0;
-  filter: drop-shadow(0 6px 18px rgba(47, 128, 237, 0.18));
-  transition: transform 0.25s ease, filter 0.25s ease;
-}
+      width: 48px;
+      height: 48px;
+      display: block;
+      flex-shrink: 0;
+      filter: drop-shadow(0 6px 18px rgba(47, 128, 237, 0.18));
+      transition: transform 0.25s ease, filter 0.25s ease;
+    }
 
-  .brand:hover .brand-logo {
-  transform: scale(1.06);
-  filter: drop-shadow(0 10px 24px rgba(47, 128, 237, 0.28));
-}  
+    .brand:hover .brand-logo {
+      transform: scale(1.06);
+      filter: drop-shadow(0 10px 24px rgba(47, 128, 237, 0.28));
+    }
 
     .brand-text small {
       display: block;
@@ -515,8 +515,9 @@
 
     .results {
       display: grid;
-      grid-template-columns: 1fr 1fr;
+      grid-template-columns: 0.9fr 1.1fr;
       gap: 18px;
+      align-items: start;
     }
 
     .testimonial,
@@ -534,6 +535,59 @@
     .quote-author {
       color: var(--muted);
       font-size: 0.92rem;
+    }
+
+    .outcome-card {
+      padding: 26px 24px;
+    }
+
+    .outcome-intro {
+      margin: 0 0 22px;
+      color: var(--muted);
+      line-height: 1.75;
+      font-size: 0.97rem;
+    }
+
+    .outcomes-list {
+      display: grid;
+      gap: 0;
+    }
+
+    .outcome-item {
+      display: grid;
+      grid-template-columns: 14px 1fr;
+      gap: 14px;
+      align-items: start;
+      padding: 16px 0;
+      border-top: 1px solid rgba(255,255,255,0.08);
+    }
+
+    .outcome-item:first-child {
+      border-top: none;
+      padding-top: 0;
+    }
+
+    .outcome-dot {
+      width: 10px;
+      height: 10px;
+      border-radius: 50%;
+      margin-top: 7px;
+      background: linear-gradient(135deg, var(--accent), var(--accent-2));
+      box-shadow: 0 0 14px rgba(95,179,255,0.45);
+    }
+
+    .outcome-item strong {
+      display: block;
+      margin-bottom: 6px;
+      font-size: 1rem;
+      color: var(--text);
+    }
+
+    .outcome-item p {
+      margin: 0;
+      color: var(--muted);
+      line-height: 1.65;
+      font-size: 0.94rem;
     }
 
     .contact-form {
@@ -693,7 +747,10 @@
     @media (max-width: 1080px) {
       .hero-grid,
       .services-grid,
-      .process-grid,
+      .process-grid {
+        grid-template-columns: 1fr 1fr;
+      }
+
       .results {
         grid-template-columns: 1fr 1fr;
       }
@@ -742,12 +799,12 @@
   <nav class="nav">
     <div class="container nav-inner">
       <a href="#home" class="brand" aria-label="GIA Digital Systems home">
-  <img src="logo_pro.svg" alt="GIA Digital Systems logo" class="brand-logo" />
-  <span class="brand-text">
-    GIA Digital Systems
-    <small>Automation, AI & Digital Efficiency</small>
-  </span>
-</a>
+        <img src="logo_pro.svg" alt="GIA Digital Systems logo" class="brand-logo" />
+        <span class="brand-text">
+          GIA Digital Systems
+          <small>Automation, AI & Digital Efficiency</small>
+        </span>
+      </a>
 
       <div class="nav-links">
         <a href="#services">Services</a>
@@ -935,47 +992,80 @@
       </div>
 
       <div class="results">
-        <article class="testimonial">
-          <h3>What success looks like</h3>
-          <p class="quote">
-            “Less manual work, clearer processes, faster decision-making and a digital structure that supports consistent execution.”
+        <article class="testimonial outcome-card">
+          <h3>Typical outcomes</h3>
+          <p class="outcome-intro">
+            The goal is not just automation. The goal is better operational performance, stronger visibility and systems that support growth.
           </p>
-          <div class="quote-author">Typical outcome of a well-executed automation and AI transformation initiative</div>
+
+          <div class="outcomes-list">
+            <div class="outcome-item">
+              <span class="outcome-dot"></span>
+              <div>
+                <strong>Less manual work</strong>
+                <p>Reduce repetitive tasks and free up time for higher-value execution.</p>
+              </div>
+            </div>
+
+            <div class="outcome-item">
+              <span class="outcome-dot"></span>
+              <div>
+                <strong>Faster execution</strong>
+                <p>Improve process speed, reduce delays and increase operational consistency.</p>
+              </div>
+            </div>
+
+            <div class="outcome-item">
+              <span class="outcome-dot"></span>
+              <div>
+                <strong>Better visibility</strong>
+                <p>Gain clearer oversight across workflows, systems and decision points.</p>
+              </div>
+            </div>
+
+            <div class="outcome-item">
+              <span class="outcome-dot"></span>
+              <div>
+                <strong>Scalable digital foundations</strong>
+                <p>Build systems that remain useful as the business grows and evolves.</p>
+              </div>
+            </div>
+          </div>
         </article>
 
         <article class="contact-card" id="contact">
-  <h3>Let’s build your next digital system</h3>
-  <p>
-    Tell me a bit about your business, your current process challenges, or the type of automation you want to explore.
-  </p>
+          <h3>Let’s build your next digital system</h3>
+          <p>
+            Tell me a bit about your business, your current process challenges, or the type of automation you want to explore.
+          </p>
 
-  <form class="contact-form" id="contactForm">
-    <input type="hidden" name="access_key" value="8f0f1846-5967-4fba-a4c6-6f30867a5024">
-    <input type="hidden" name="subject" value="New Lead - GIA Digital Systems">
-    <input type="hidden" name="from_name" value="GIA Website">
-    <input type="hidden" name="redirect" value="false">
+          <form class="contact-form" id="contactForm">
+            <input type="hidden" name="access_key" value="8f0f1846-5967-4fba-a4c6-6f30867a5024">
+            <input type="hidden" name="subject" value="New Lead - GIA Digital Systems">
+            <input type="hidden" name="from_name" value="GIA Website">
+            <input type="hidden" name="redirect" value="false">
 
-    <input type="text" name="name" placeholder="Your name" required />
-    <input type="email" name="email" placeholder="Your email" required />
-    <input type="text" name="company" placeholder="Company name" />
+            <input type="text" name="name" placeholder="Your name" required />
+            <input type="email" name="email" placeholder="Your email" required />
+            <input type="text" name="company" placeholder="Company name" />
 
-    <textarea
-      name="message"
-      rows="5"
-      placeholder="Tell me about your project or current bottlenecks..."
-      required
-    ></textarea>
+            <textarea
+              name="message"
+              rows="5"
+              placeholder="Tell me about your project or current bottlenecks..."
+              required
+            ></textarea>
 
-    <button type="submit" class="btn btn-primary" id="submitButton">Send Message</button>
-    <p id="formStatus" style="margin: 10px 0 0; color: var(--muted);"></p>
-  </form>
+            <button type="submit" class="btn btn-primary" id="submitButton">Send Message</button>
+            <p id="formStatus" style="margin: 10px 0 0; color: var(--muted);"></p>
+          </form>
 
-  <ul>
-    <li><strong>Email:</strong> g.lamata@giadigitalsystems.com</li>
-    <li><strong>LinkedIn:</strong> Gerard La Mata / GIA Digital Systems</li>
-    <li><strong>Focus:</strong> Automation, AI, process optimization, digital systems</li>
-  </ul>
-</article>
+          <ul>
+            <li><strong>Email:</strong> g.lamata@giadigitalsystems.com</li>
+            <li><strong>LinkedIn:</strong> Gerard La Mata / GIA Digital Systems</li>
+            <li><strong>Focus:</strong> Automation, AI, process optimization, digital systems</li>
+          </ul>
+        </article>
       </div>
     </div>
   </section>
@@ -1103,4 +1193,4 @@
     });
   </script>
 </body>
-</html>ं
+</html>
